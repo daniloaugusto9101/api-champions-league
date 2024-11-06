@@ -1,5 +1,5 @@
 export const getPlayerService = async () => {
   return {
-    player: "Ronaldo",
+    player: "Ronaldo22",
   };
 };
