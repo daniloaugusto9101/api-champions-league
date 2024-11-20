@@ -6,9 +6,25 @@ export const ok = async (data: any): Promise<HttpResponse> => {
     body: data,
   };
 };
+
+export const created = async (): Promise<HttpResponse> => {
+  return {
+    statusCode: 201,
+    body: {
+      message: "Player created successfully11",
+    },
+  };
+};
 export const noContent = async (): Promise<HttpResponse> => {
   return {
     statusCode: 204,
+    body: null,
+  };
+};
+
+export const badRequest = async (): Promise<HttpResponse> => {
+  return {
+    statusCode: 400,
     body: null,
   };
 };
